@@ -19,9 +19,9 @@ class Product(scrapy.Spider):
     def start_requests(self):
         urls = [
             # example urls
-            'https://www.digikala.com/product/dkp-3942680/کابل-تبدیل-usb-به-usb-c-اچ-اند-ام-مدل-c04-طول-02-متر',
-            'https://www.digikala.com/product/dkp-3329268/کابل-تبدیل-usb-به-usb-c-بیبوشی-مدل-ca003a-طول-1-متر',
-            'https://www.digikala.com/product/dkp-3141369/کابل-تبدیل-usb-به-usb-c-بیبوشی-مدل-a05-طول-1-متر',
+            'https://www.digikala.com/product/dkp-8366616/',
+            'https://www.digikala.com/product/dkp-10741540/',
+            'https://www.digikala.com/product/dkp-6459894/',
         ]
         for url in urls:
             yield scrapy.Request(url=url, callback=self.parse)
